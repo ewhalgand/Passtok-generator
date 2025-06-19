@@ -1,0 +1,30 @@
+# Binary compiled
+ptk*
+/build/
+
+# Archives
+*.zip
+*.tar.gz
+*.dmg
+*.pkg
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers temporaires
+*.log
+*.tmp
+*.swp
+
+# Éditeurs de texte / IDE
+.idea/
+.vscode/
+*.code-workspace
+
+# Fichiers de test ou de debug
+*.test
+*.out
+
+# Cache de Go
+**/go.sum
