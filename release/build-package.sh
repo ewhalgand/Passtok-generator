@@ -39,18 +39,17 @@ echo "✅ Packaging complete. Files saved in $OUTPUT_DIR"
 OS_TYPE=$(uname -s | tr '[:upper:]' '[:lower:]')
 
 if [[ "$OS_TYPE" == "darwin" || "$OS_TYPE" == "linux-gnu" ]]; then
-  echo "🚀 Installing ptk binaries to /usr/local/bin/ (requires write permissions)..."
+  echo "🚀 Installing ptk binaries to /usr/local/bin/ (may require sudo)..."
 
   if [[ "$OS_TYPE" == "darwin" ]]; then
-    cp "$OUTPUT_DIR/ptk-mac-intel" /usr/local/bin/ptk || echo "⚠️ Could not copy Mac Intel binary (permission denied?)"
-    cp "$OUTPUT_DIR/ptk-mac-arm64" /usr/local/bin/ptk-arm64 || echo "⚠️ Could not copy Mac ARM64 binary (permission denied?)"
+    sudo cp "$OUTPUT_DIR/ptk-mac-intel" /usr/local/bin/ptk || echo "⚠️ Could not copy Mac Intel binary"
+    sudo cp "$OUTPUT_DIR/ptk-mac-arm64" /usr/local/bin/ptk-arm64 || echo "⚠️ Could not copy Mac ARM64 binary"
   elif [[ "$OS_TYPE" == "linux-gnu" ]]; then
-    cp "$OUTPUT_DIR/ptk-linux" /usr/local/bin/ptk || echo "⚠️ Could not copy Linux binary (permission denied?)"
+    sudo cp "$OUTPUT_DIR/ptk-linux" /usr/local/bin/ptk || echo "⚠️ Could not copy Linux binary"
   fi
 
-  echo "✅ Installation complete. You might need to rerun this script with sudo if permission was denied."
+  echo "✅ Installation complete."
 else
   echo "⚠️ Windows detected: please create a proper installer (e.g., Inno Setup) to install ptk-windows.exe."
 fi
 
-echo "🎉 All done!"
