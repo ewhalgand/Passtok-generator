@@ -19,7 +19,7 @@ Download the latest `.zip` archive for your platform from the [Releases](https:/
 - [⬇️ macOS Intel](https://github.com/ewhalgand/Passtok-generator/releases/download/v1.0.0/ptk-mac-intel-1.0.0.zip)
 - [⬇️ macOS Apple Silicon](https://github.com/ewhalgand/Passtok-generator/releases/download/v1.0.0/ptk-mac-arm64-1.0.0.zip)
 - [⬇️ Linux](https://github.com/ewhalgand/Passtok-generator/releases/download/v1.0.0/ptk-linux-1.0.0.zip)
-- [⬇️ Windows](https://github.com/ewhalgand/Passtok-generator/releases/download/v1.0.0/ptk-windows.exe-1.0.0.zip)
+- [⬇️ Windows](https://github.com/ewhalgand/Passtok-generator/releases/download/v1.0.0/ptk-windows-1.0.0.zip)
 
 Unzip the archive and place the binary in your `$PATH`.
 
