@@ -28,6 +28,9 @@ Unzip the archive and place the binary in your `$PATH`.
 Here are the main commands available:
 
 ```bash
+# Show package version
+ptk --version
+
 # Generate a password (default length, default type)
 ptk gen
 
