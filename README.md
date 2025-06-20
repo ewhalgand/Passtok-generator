@@ -2,19 +2,45 @@
 
 **ptk** is a simple and secure command-line tool to generate passwords and tokens, built with Go and Cobra.
 
-## Features
+## ✨ Features
 
-- Generate strong, random passwords and API tokens
+- Generate strong, random passwords or API tokens
+- Control the output length and type
+- Optional clipboard copy
 - Cross-platform support (macOS, Linux, Windows)
-- Easy to install and use via terminal commands
+- Lightweight and fast
 
-## Installation
+## 📦 Installation
 
-### Download precompiled binaries
+### 🔽 Download precompiled binaries
 
-You can download the latest release `.zip` archive for your platform directly here:
+Download the latest `.zip` archive for your platform from the [Releases](https://github.com/ewhalgand/Passtok-generator/releases) page:
 
-- [ptk-mac-intel.zip](https://example.com/releases/ptk-mac-intel.zip) (macOS Intel)
-- [ptk-mac-arm64.zip](https://example.com/releases/ptk-mac-arm64.zip) (macOS Apple Silicon)
-- [ptk-linux.zip](https://example.com/releases/ptk-linux.zip) (Linux)
-- [ptk-windows.zip](https://example.com/releases/ptk-windows.zip) (Windows)
+- [⬇️ macOS Intel](https://github.com/ewhalgand/Passtok-generator/releases/download/v1.0.0/ptk-mac-intel.zip)
+- [⬇️ macOS Apple Silicon](https://github.com/ewhalgand/Passtok-generator/releases/download/v1.0.0/ptk-mac-arm64.zip)
+- [⬇️ Linux](https://github.com/ewhalgand/Passtok-generator/releases/download/v1.0.0/ptk-linux.zip)
+- [⬇️ Windows](https://github.com/ewhalgand/Passtok-generator/releases/download/v1.0.0/ptk-windows.exe)
+
+Unzip the archive and place the binary in your `$PATH`.
+
+## ⚙️ Usage
+
+Here are the main commands available:
+
+```bash
+# Generate a password (default length, default type)
+ptk gen
+
+# Specify the type of string to generate (password or token)
+ptk gen --type=password
+ptk gen --type=token
+
+# Specify the length of the generated string (e.g., 32 characters)
+ptk gen --length=32
+
+# Copy the generated result to the clipboard
+ptk gen --copy
+
+# Combine all options
+ptk gen --type=token --length=64 --copy
+```
