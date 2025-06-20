@@ -32,15 +32,15 @@ Here are the main commands available:
 ptk gen
 
 # Specify the type of string to generate (password or token)
-ptk gen --type=password
-ptk gen --type=token
+ptk gen --type password
+ptk gen --type token
 
 # Specify the length of the generated string (e.g., 32 characters)
-ptk gen --length=32
+ptk gen --length 32
 
 # Copy the generated result to the clipboard
 ptk gen --copy
 
 # Combine all options
-ptk gen --type=token --length=64 --copy
+ptk gen --type token --length 64 --copy
 ```
